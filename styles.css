@@ -1,0 +1,204 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* About Me Section */
+#about-me {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    max-width: 300px;
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;  /* Circular Image */
+    border: 5px solid #333;
+    object-fit: cover;  /* Ensures the image fits within the circle */
+}
+
+.about-text {
+    flex: 2;
+    text-align: left;
+    max-width: 600px;
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #180909;
+}
+/* Projects Section with Horizontal Scrolling */
+#projects {
+    background-color: #fff;
+    padding: 35px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.horizontal-scroll-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;  /* Enables horizontal scrolling */
+    scroll-behavior: smooth;  /* Smooth scrolling effect */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+    height: 8px;  /* Custom scrollbar height */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #333;  /* Color of the scrollbar thumb */
+    border-radius: 10px;
+}
+
+.project-card {
+    min-width: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;  /* Prevents shrinking of cards */
+}
+
+/* Optional: Add a hover effect to project cards */
+.project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Social Links in Footer */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ddd;
+}
+
+.social-links i {
+    margin-right: 5px;
+}
+
+/* Contact Form */
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin: 0 0 20px 0;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
