@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>John Mbusyo Portfolio</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header and Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <div class="about-container">
+            <!-- Circular Image Section -->
+            <div class="about-image">
+                <img src="images\Screenshr.png" alt="John Mbusyo Photo">
+            </div>
+            <!-- About Me Text -->
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>
+                    Hi, I'm John Mbusyo, a passionate web developer, UI/UX designer, and certified sign language interpreter from Kenya. 
+                    I specialize in creating user-centered designs and functional websites. 
+                    I have a diverse skill set that combines design with technical expertise, 
+                    and I love working on projects that solve real-world problems. Let's build something great together!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+        <div class="horizontal-scroll-container">
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A web design project...</p>
+                <img src="images\page3.png" alt=" PROJECT 1" aria-rowspan="2">
+            </div>
+            <br><br>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>A UI/UX design project...</p>
+            </div>
+            <br><br>
+            <div class="website mockup" >
+                <img src="images\page3.png" alt=" PROJECT 1" aria-colspan="2">
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer with Social Links -->
+    <footer>
+        <p>&copy; 2024 John Mbusyo Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://codepen.io/your-username" target="_blank"><i class="fab fa-codepen"></i> CodePen</a>
+            <a href="https://www.figma.com/@your-username" target="_blank"><i class="fab fa-figma"></i> Figma</a>
+            <a href="https://www.behance.net/your-username" target="_blank"><i class="fab fa-behance"></i> Behance</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
